@@ -1,0 +1,104 @@
+<!--King of the Castle-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=""UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="capstone4.css">
+    <title>King of the Castle</title>
+  </head>
+
+    <body onload="onLoad()">
+    
+        <div class="container">
+            <!--Nav Bar-->
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li>ArchiveMK.</li>
+                </ul>
+                    
+                <ul class="right-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inside.html">Inside ArchiveMK.</a></li>
+                    <li><a href="save4Later.html">Saved Performances</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <br>
+            <br>
+            
+            <!-- Performance Overview-->
+            <section class="perform-profile">
+                <div class="content">
+                    <div class="left">
+                        <img src="Images/speedo4.jpg" alt="figure in red speedo lying face down" />  
+                    </div>
+
+                    <div class="right">
+                        <h2><span class="title">King of the Castle</span></h2>
+                        <h4>Fordsburg, Johannesburg, South Africa</h4>
+                        <p>(2010)</p>
+                        <br>
+                        <br>
+                        
+                        <a href="http://vaughnsadie.net/?portfolio=performing-the-streetlamp" target="_blank">Find out more...</a>
+
+                        <!-- Each item must have the option to “Save for later”-->
+                        <button onclick="saveKing()" class="save-btn">SAVE</button>
+                        <br>
+                        <br>
+
+                        <!-- Create forms to allow a user to “like” an item-->
+                        <form class="save-frm">
+                            <label for="like">Do you like this performance?</label>
+                            <input type="checkbox" id="like" name="like">
+                        </form>
+                        <br>
+                        <br>
+
+                        <!-- Create a form which allows a user to leave comments-->
+                        <form onsubmit="addKing()" class="comment-frm">
+                           <textarea id="text" name="text" placeholder="Add your comment here..."></textarea>
+                            <button type="submit" id="submit-btn">Comment</button>
+                            <button type="reset" id="reset-btn">Cancel</button>
+                        </form>
+                        <br>
+                        <br>
+
+                        <!--Display comments within an unordered list-->
+                        <div class="display-comments">
+                            <ul id="kingList"><span id="com-heading">COMMENTS</span></ul>
+                        </div>
+                    </div>          
+                </div>
+            </section>
+        </div>
+        <br>
+        <br>
+
+        <!--Webpage bottom links-->
+        <section class="links">
+            <div class="links-inner">
+            <ul>
+                <li><h3>ArchiveMK.</h3></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inside.html">Inside ArchiveMK.</a></li>
+                <li><a href="save4Later.html">Saved Performances</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>        
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-inner">
+            <ul>
+                <li><a href="#">&copy; ArchiveMK. 2022</a></li>
+            </ul>
+            </div>
+        </footer>
+        <script async type="text/javascript" src="Javascript/save4Later.js"></script>
+        <script type="text/javascript" src="Javascript/commentsKing.js"></script>
+    </body>
+</html>
