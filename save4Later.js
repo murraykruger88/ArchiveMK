@@ -51,7 +51,7 @@ function Link(title, href) {
 //SAVE FUNCTIONS FOR SAVE ARRAY
 function saveKing(){
     let saved = JSON.parse(localStorage.getItem('Saved'));
-    let king = new Link('King of the Castle', 'KingOfTheCastle.html'); 
+    let king = new Link('King of the Castle', 'kingOfTheCastle.html'); 
     saved.push(king);
     console.log(saved);
     alert (`You have saved this item to yourfolder. There are now ${saved.length} items your folder`);
@@ -60,7 +60,7 @@ function saveKing(){
 
 function saveTeka(){
     let saved = JSON.parse(localStorage.getItem('Saved'));
-    let teka = new Link('Teka Munyika', 'Teka Munyika.html');  
+    let teka = new Link('Teka Munyika', 'tekaMunyika.html');  
     saved.push(teka);
     console.log(saved);
     alert (`You have saved this item to your folder. There are now ${saved.length} items your folder`);
@@ -69,7 +69,7 @@ function saveTeka(){
 
 function saveJournal(){
     let saved = JSON.parse(localStorage.getItem('Saved'));
-    let journal = new Link('Journal', 'Journal.html'); 
+    let journal = new Link('Journal', 'journal.html'); 
     saved.push(journal);
     console.log(saved);
     alert (`You have saved this item to your folder. There are now ${saved.length} items your folder`);
@@ -78,7 +78,7 @@ function saveJournal(){
 
 function saveTropitone(){
     let saved = JSON.parse(localStorage.getItem('Saved'))
-    let tropitone = new Link('Tropitone', 'Tropitone.html'); 
+    let tropitone = new Link('Tropitone', 'tropitone.html'); 
     saved.push(tropitone);
     console.log(saved);
     alert (`You have saved this item to your folder. There are now ${saved.length} items your folder`);
